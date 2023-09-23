@@ -14,3 +14,11 @@
 .cxx
 local.properties
 *.log
+hs_err_pid2296.log
+hs_err_pid2944.log
+hs_err_pid6340.log
+hs_err_pid9296.log
+hs_err_pid12184.log
+hs_err_pid13560.log
+replay_pid2296.log
+replay_pid12184.log
