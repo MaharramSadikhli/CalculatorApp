@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="MainActivity">
+
+
+    <EditText
+        android:id="@+id/showResult"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:ems="10"
+        android:gravity="right|center_vertical"
+        android:inputType="text"
+        android:text="0"
+        android:textAlignment="gravity"
+        android:textSize="60sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp">
+
+            <Button
+                android:id="@+id/AC"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="getReset"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="AC"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/plusminus"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="getBtnVal"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="+/-"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/percent"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="getPercent"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="%"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/divide"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="getOperation"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="/"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp">
+
+            <Button
+                android:id="@+id/seven"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="getBtnVal"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="7"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/eight"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="getBtnVal"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="8"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/nine"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="getBtnVal"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="9"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/multiply"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="getOperation"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="x"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp">
+
+            <Button
+                android:id="@+id/four"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="getBtnVal"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="4"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/five"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="getBtnVal"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="5"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/six"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="getBtnVal"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="6"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/difference"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="getOperation"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="-"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp">
+
+            <Button
+                android:id="@+id/one"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="getBtnVal"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="1"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/two"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="getBtnVal"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="2"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/three"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="getBtnVal"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="3"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/sum"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="getOperation"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="+"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:layout_margin="2dp">
+
+            <Button
+                android:id="@+id/zero"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="getBtnVal"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/nothing"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text=","
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/decimal"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="."
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/equal"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="getEqual"
+                android:shadowColor="#D000FF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="="
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
